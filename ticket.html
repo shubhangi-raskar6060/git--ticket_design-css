@@ -1,107 +1,83 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>College Event Ticket</title>
-        <style>
-            body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .ticket-container {
-        width: 80%;
-        margin: 40px auto;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .ticket-header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    .ticket-body {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    
-    .event-details {
-        flex-basis: 60%;
-    }
-    
-    .ticket-info {
-        flex-basis: 30%;
-    }
-    
-    .ticket-footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        clear: both;
-    }
-    
-    @media only screen and (max-width: 768px) {
-        .ticket-body {
-            flex-direction: column;
-        }
-        .event-details, .ticket-info {
-            flex-basis: 100%;
-            margin-bottom: 20px;
-        }
-    }
-    
-    
-    
-        </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Ticket</title>
     </head>
-    <body>
-        <div class="ticket-container">
-            <div class="ticket-header">
-                <h1>College Event Ticket</h1>
-            </div>
-            <div class="ticket-body">
-                <div class="event-details">
-                    <h2>Event Name: annual cultural program</h2>
-                    <p>Date: 20th January 2025</p>
-                    <p>Time: 6:00 PM</p>
-                    <p>Venue: RKMM college</p>
-                </div>
-                <div class="ticket-info">
-                    <p>Ticket Number: #12345</p>
-                    <p>Name: John Doe</p>
-                    <p>Student ID: 10101010</p>
-                </div>
-            </div>
-            <div class="ticket-footer">
-            <p>&copy;<img src="./img/rtc logo.jpeg" class="product-image" alt="rtc" height="15px"> All rights reserved.</p>
+    <style> 
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #20b1d2;
+}
 
-                
-            </div>
-            <div class="receipt-footer">
-                
-                    <p>&copy;<img src="./img/rayat logo.jpeg" class="product-image" alt="rayat" height="15px"> All rights reserved.</p>
-                
-                
-                <div class="color-box"></div>
-    
-                
-    
-            </div>
-    
-    
+.ticket-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ebceca;
+    border: 1px solid #201818;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.college-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.ticket-info {
+    margin-bottom: 20px;
+}
+
+.ticket-footer {
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .ticket-container {
+        width: 90%;
+    }
+}
+/*Mobile   */
+@media (max-width: 600px){
+        
+    }
+    /*Tablet   */
+    @media (min-width: 601px) and (max-width: 800px){
+
+    }
+    /*Laptop   */
+    @media (min-width: 801px) and (max-width: 1024px){
+       
+   }
+    </style>
+<body>
+    <div class="ticket-container">
+        <div class="ticket-header">
+            <img src="./img/rayat.jpg" alt="College Logo" class="college-logo">
+            <h2>College Event Ticket</h2>
         </div>
-    </body>
-    </html>
-    
-    
-    
-    
+        <div class="ticket-info">
+            <p><strong>Event Name:</strong> College Cultural Fest</p>
+            <p><strong>Date:</strong> 5th february 2025</p>
+            <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
+            <p><strong>Venue:</strong> College Auditorium</p>
+        </div>
+        <div class="ticket-footer">
+            <p><strong>Ticket Number:</strong> #12345</p>
+            <p><strong>Name:</strong> shubhangi raskar</p>
+            <p><strong>College ID:</strong> CD12345</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
